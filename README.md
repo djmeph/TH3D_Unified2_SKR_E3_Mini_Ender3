@@ -1,3 +1,15 @@
+# TH3D_Unified2_SKR_E3_Mini
+TH3D Unified2 Firmware for Ender 3 with Bondtech BMG Extruder
+
+Key settings:
+
+```
+#define CUSTOM_ESTEPS
+#define CUSTOM_ESTEPS_VALUE 415
+```
+
+The Bondtech BMG has a 3:1 gear ratio and runs in reverse of the stock Ender extruder at 415steps/mm. I have rewired my Ender 3 to reverse the motor so the default setting can be used.
+
 # Unified 2.0 Firmware
 
 Unified Firmware 2.0 is the latest easy to use firmware for select 3D printers and boards from TH3D Studio. Both 8 bit and 32 bit based machines/boards are supported thanks to being built on **Marlin 2.0.9**.
