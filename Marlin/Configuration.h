@@ -55,7 +55,7 @@
 //#define ENDER3_OEM
 //#define ENDER3_MAX_OEM
 //#define ENDER5_OEM
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // EZABL on Z-Probe Port Wiring Option
 // If your BTT board is making the EZABL work unreliably then connect to the Z-Probe port on pins GND and PC14.
@@ -151,7 +151,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -48, -10, 0 }
 #endif
 
 
@@ -222,8 +222,8 @@
 //#define FAN_FIX
 
 // Use your own printer name - Uncomment both lines
-//#define CUSTOM_PRINTER_NAME
-//#define USER_PRINTER_NAME "CHANGE ME"
+#define CUSTOM_PRINTER_NAME
+#define USER_PRINTER_NAME "ENDER 3"
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
@@ -268,9 +268,9 @@
 // If you want to use the BL-Touch uncomment the 2 lines below. Refer to BTT documentation for connecting the BL Touch.
 // Use the Z endstop port for the black/white wires from the BL Touch.
 // You also need to uncomment #define CUSTOM_PROBE above and then enter in your offsets above in the CUSTOM PROBE section.
-//#define BLTOUCH
+#define BLTOUCH
 // Here is where you set your servo pin. For SKR E3 Mini use PA1
-//#define SERVO0_PIN PA1
+#define SERVO0_PIN PA1
 
 // MANUAL MESH LEVELING ----------------------------
 // If you want to use manual mesh leveling you can enable the below option. This is for generating a MANUAL mesh WITHOUT a probe. To change the mesh inset value change the EZABL_PROBE_EDGE setting above.
