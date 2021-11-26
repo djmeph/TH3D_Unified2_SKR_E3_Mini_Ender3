@@ -1,14 +1,22 @@
 # TH3D_Unified2_SKR_E3_Mini
-TH3D Unified2 Firmware for Ender 3 with Bondtech BMG Extruder
+TH3D Unified2 Firmware for Creality Ender 3 with Bondtech BMG Extruder and BL Touch
 
 Key settings:
 
 ```
 #define CUSTOM_ESTEPS
 #define CUSTOM_ESTEPS_VALUE 415
+
+#define BLTOUCH
+#define SERVO0_PIN PA1
+
+#define CUSTOM_PROBE
+#define NOZZLE_TO_PROBE_OFFSET { -48, -10, 0 }
 ```
 
 The Bondtech BMG has a 3:1 gear ratio and runs in reverse of the stock Ender extruder at 415steps/mm. I have rewired my Ender 3 to reverse the motor so the default setting can be used.
+
+TH3D Unified Firmware 2.0 uses the Z-stop input for the homing mechanism of BL Touch, and PA1 for the digital input.
 
 # Unified 2.0 Firmware
 
